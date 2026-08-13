@@ -1,0 +1,39 @@
+{
+  "name": "mini-dns-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Realistic mini DNS API assessment implementation",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "worker": "tsx src/queue/dns-query.worker.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "bullmq": "^5.58.5",
+    "dotenv": "^17.2.1",
+    "drizzle-orm": "^0.45.2",
+    "fastify": "^5.4.0",
+    "ioredis": "^5.7.0",
+    "zod": "^4.0.17"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^24.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "drizzle-kit": "^0.18.1",
+    "eslint": "^9.33.0",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
