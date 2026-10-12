@@ -16,6 +16,8 @@
     "db:migrate": "drizzle-kit migrate"
   },
   "dependencies": {
+    "@fastify/swagger": "^9.9.2",
+    "@fastify/swagger-ui": "^6.1.2",
     "better-sqlite3": "^11.10.0",
     "bullmq": "^5.58.5",
     "dotenv": "^17.2.1",
